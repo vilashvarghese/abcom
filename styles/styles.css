@@ -18,12 +18,12 @@
   --primary: #0085D5;
   --dark-link-color: #fff;
   --text-color: #131313;
-  --link-color: #3b63fb;
+  --link-color: var(--primary);
   --link-hover-color: #1d3ecf;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --heading-font-family: 'Roboto Condensed', roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -66,8 +66,8 @@
 
     /* heading sizes */
     --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
+    --heading-font-size-xl: 28px;
+    --heading-font-size-l: 20px;
     --heading-font-size-m: 22px;
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
@@ -80,7 +80,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   line-height: 1.6;
 }
 
@@ -106,6 +106,16 @@ footer .footer[data-block-status="loaded"] {
   body[data-breadcrumbs] {
     --header-height: calc(var(--nav-height) + var(--breadcrumbs-height));
   }
+}
+
+.py-5 {
+  padding-block: 10px;
+}
+.py-10 {
+  padding-block: 10px;
+}
+.py-20 {
+  padding-block: 20px;
 }
 
 h1,

@@ -3,20 +3,24 @@ main > .highlight-section {
     display: grid;
     grid-template-columns: 1fr 284px;
     gap: 10px;
+    grid-auto-rows: min-content;
     margin-inline: auto;
     width: 1190px;
 
     .default-content-wrapper:first-child {
         grid-column: 1;
-        grid-row: 1;
         align-self: start;
+        height: auto;
     }
     .columns-wrapper {
         grid-column: 1;
-        grid-row: 2;
     }
-    .default-content-wrapper:lastchild {
+    .default-content-wrapper:last-child {
+        align-self: start;
         grid-column: 2;
-        grid-row: 1 / span 2
+    }
+
+    .default-content-wrapper:last-child ui li {
+        margin-bottom: 18px;
     }
 }
