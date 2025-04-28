@@ -14,7 +14,9 @@
   /* colors */
   --background-color: white;
   --light-color: #f8f8f8;
-  --dark-color: #505050;
+  --dark-color: #222222;
+  --primary: #0085D5;
+  --dark-link-color: #fff;
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
@@ -37,7 +39,7 @@
   --heading-font-size-xs: 22px;
 
   /* nav heights */
-  --nav-height: 64px;
+  --nav-height: 124px;
   --breadcrumbs-height: 34px;
   --header-height: var(--nav-height);
 }
@@ -126,6 +128,10 @@ h3 { font-size: var(--heading-font-size-l); }
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
+
+ul {
+  margin: 0;
+}
 
 p,
 dl,

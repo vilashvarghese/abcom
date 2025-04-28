@@ -1,6 +1,7 @@
 footer {
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
   font-size: var(--body-font-size-xs);
+  color: var(--dark-link-color);
 }
 
 footer .footer > div {
@@ -8,9 +9,29 @@ footer .footer > div {
   max-width: 1200px;
   padding: 40px 24px 24px;
 }
+footer .footer a {
+  color: var(--dark-link-color);
+}
+
+footer .footer ul {
+  list-style-type: none;
+}
+
+footer .footer p + ul {
+  font-size: 14px;
+}
+
+footer .footer p + ul > li{
+  font-size: 12px;
+}
 
 footer .footer p {
   margin: 0;
+}
+
+footer .footer img {
+  width: 100%;
+  height: auto;
 }
 
 @media (width >= 900px) {
