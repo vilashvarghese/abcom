@@ -1,1 +1,22 @@
 /* add global styles that can be loaded post LCP here */
+main > .highlight-section {
+    display: grid;
+    grid-template-columns: 1fr 284px;
+    gap: 10px;
+    margin-inline: auto;
+    width: 1190px;
+
+    .default-content-wrapper:first-child {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: start;
+    }
+    .columns-wrapper {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .default-content-wrapper:lastchild {
+        grid-column: 2;
+        grid-row: 1 / span 2
+    }
+}
