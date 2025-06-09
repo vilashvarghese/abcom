@@ -77,6 +77,12 @@ function coveoSearchTemplate() {
           </atomic-facet-manager>
         </atomic-layout-section>  
         <atomic-layout-section section="main">
+          <atomic-tab-manager clear-filters-on-tab-change="false">
+            <atomic-tab name="all" label="All"></atomic-tab>
+            <atomic-tab name="YouTubeVideo" label="YouTube Video" expression="@filetype=YouTubeVideo"></atomic-tab>
+            <atomic-tab name="rssitem" label="RSS Item" expression="@filetype=rssitem"></atomic-tab>
+            <atomic-tab name="YouTubePlaylist" label="YouTube Playlist" expression="@filetype=YouTubePlaylist"></atomic-tab>
+          </atomic-tab-manager>
           <atomic-layout-section section="status">
             <atomic-breadbox></atomic-breadbox>
             <atomic-query-summary></atomic-query-summary>
